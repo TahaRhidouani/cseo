@@ -9,3 +9,14 @@ This website is bilingual (french and english) which the user can pick upon firs
 ![homepage](https://github.com/TahaInc/cseo/blob/master/images/screenshot_2.png?raw=true)
 
 ![registration](https://github.com/TahaInc/cseo/blob/master/images/screenshot_3.png?raw=true)
+
+## Run
+
+Every push to `main` builds `ghcr.io/taharhidouani/cseo` (tags `main` and `sha-<commit>`) on GitHub Actions. The image serves the site with FrankenPHP on port 8080 and answers `GET /healthz`. It writes no files.
+
+```sh
+docker build -t cseo .
+docker run --rm -p 8080:8080 cseo
+```
+
+The registration form (`registration.php`) uses PHP `mail()`, which needs a mail transport the image does not include.

@@ -1,0 +1,23 @@
+{
+	auto_https off
+	admin off
+	frankenphp {
+		num_threads 2
+	}
+}
+
+{$SERVER_NAME::8080} {
+	root * /app/public
+	header X-Content-Type-Options nosniff
+
+	@hidden path_regexp (?i)^/(\.|.*/\.|README|Dockerfile|Caddyfile|php\.ini$)
+	@missing not file
+
+	route {
+		respond /healthz 200
+		respond @hidden 404
+		rewrite / /Home.html
+		respond @missing 404
+		php_server
+	}
+}
