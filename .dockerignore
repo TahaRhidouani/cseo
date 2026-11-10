@@ -8,3 +8,28 @@ node_modules
 Dockerfile
 README.md
 images
+
+# Source photos that no page uses (kept in git, left out of the image)
+assets/IMG_757?*.png
+assets/20150829_174449.jpg
+assets/20150829_110215-900x1600.jpg
+assets/20150829_110546-1024x576.jpg
+assets/20160226_192956-900x506.jpg
+assets/20160910_112939.jpg
+assets/20160910_161038.jpg
+assets/20170823_190120-1024x576.jpg
+assets/20170826_090035-1024x576.jpg
+assets/20170826_184546-e1547393952716.jpg
+assets/20170827_155554-1024x576.jpg
+assets/20170827_164008-1024x576.jpg
+assets/063-576x1024 ?1?.jpg
+assets/103-1024x683 ?1?.jpg
+assets/futsal_field.jpg
+admin_assets/images/20150829-174449-2000x3556-800x1422.jpg
+admin_assets/images/20160226-192956-900x506-800x450.jpg
+admin_assets/images/20160910-161038-2000x1125-800x450.jpg
+admin_assets/images/20170823-190120-1024x576-800x450.jpg
+admin_assets/images/20170826-184546-e1547393952716-2000x3556.jpg
+admin_assets/images/20170827-164008-1024x576-800x450.jpg
+admin_assets/images/20181215-110510-1024x768-800x600.jpg
+admin_assets/images/img-757?-2018-12-08-*.png
